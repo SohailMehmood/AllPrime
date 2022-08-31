@@ -2,14 +2,14 @@
 
 class AllPrime
 {
-    static bool isPrime(int n)
+    static bool isPrime(int number)
     {
-        if (n == 0 || n == 1)
+        if (number == 0 || number == 1)
             return false;
 
-        for (int i = 2; i < n; i++)
+        for (int i = 2; i < number; i++)
         {
-            if (n % i == 0)
+            if (number % i == 0)
                 return false;
         }
 
@@ -18,9 +18,9 @@ class AllPrime
 
     static void Main(String[] args)
     {
-        int N = int.MaxValue;
+        int max = int.MaxValue;
 
-        for (int i = 1; i <= N; i++)
+        for (int i = 1; i <= max; i++)
 
             if (isPrime(i))
             {
