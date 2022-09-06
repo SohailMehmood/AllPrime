@@ -6,6 +6,11 @@ namespace AllPrime
     {
         public static void Main(string[] args)
         {
+            if (args == null)
+            {
+                throw new ArgumentNullException(nameof(args));
+            }
+
             const int MAX = int.MaxValue;
 
             for (int i = 1; i <= MAX; i++)
